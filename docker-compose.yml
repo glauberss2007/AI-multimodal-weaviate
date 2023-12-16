@@ -1,0 +1,28 @@
+version: '3.4'  # Specifies the version of the Docker Compose file format
+
+services:  # Defines the services to be run
+  weaviate:  # Defines a service named 'weaviate'
+    command:  # Specifies the command to run within the container
+    - --host  # Sets the host IP address to listen on (0.0.0.0 means listen on all available IPs)
+    - 0.0.0.0
+    - --port  # Sets the port on which Weaviate will run
+    - '8080'
+    - --scheme  # Specifies the scheme to use (http in this case)
+    - http
+    image: semitechnologies/weaviate:1.22.5  # Specifies the Docker image to use for the container
+    ports:  # Specifies port mappings between the container and host machine
+    - 8080:8080  # Maps port 8080 on the host to port 8080 in the container
+    - 50051:50051  # Maps port 50051 on the host to port 50051 in the container
+    volumes:  # Specifies volume mounts between the host and container
+    - weaviate_data:/var/lib/weaviate  # Mounts a volume named 'weaviate_data' to store Weaviate data
+    restart: on-failure:0  # Specifies the container restart policy
+    environment:  # Specifies environment variables for the container
+      QUERY_DEFAULTS_LIMIT: 25  # Sets the default query limit to 25
+      AUTHENTICATION_ANONYMOUS_ACCESS_ENABLED: 'true'  # Enables anonymous access authentication
+      PERSISTENCE_DATA_PATH: '/var/lib/weaviate'  # Specifies the data path for Weaviate
+      DEFAULT_VECTORIZER_MODULE: 'none'  # Sets the default vectorizer module to 'none'
+      ENABLE_MODULES: 'text2vec-cohere,text2vec-huggingface,text2vec-palm,text2vec-openai,generative-openai,generative-cohere,generative-palm,ref2vec-centroid,reranker-cohere,qna-openai'  # Specifies enabled modules for Weaviate
+      CLUSTER_HOSTNAME: 'node1'  # Sets the hostname for clustering purposes
+
+volumes:  # Defines named volumes for use by services
+  weaviate_data:  # Defines a named volume called 'weaviate_data'
