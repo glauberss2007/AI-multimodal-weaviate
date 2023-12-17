@@ -64,7 +64,7 @@ Cloud deployment involves using cloud service providers (like Azure, AWS, or GCP
 - **Costs:** Can incur costs based on usage or subscription models.
 - **Dependency on Provider:** Relies on the cloud service provider's infrastructure and may have constraints based on their offerings.
 
-PS: in this repository you can found a docker compose file. You can navigate to this directory and run `docker-compose up -d` to run it and `docker p` to confirm if is it running (http://localhost:8080). 
+PS: in this repository you can found a docker compose file. You can navigate to this directory and run `docker-compose up -d` to run it and `docker ps` to confirm if is it running (http://localhost:8080). 
 
 
 
