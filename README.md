@@ -66,6 +66,23 @@ Cloud deployment involves using cloud service providers (like Azure, AWS, or GCP
 
 PS: in this repository you can found a docker compose file. You can navigate to this directory and run `docker-compose up -d` to run it and `docker ps` to confirm if is it running (http://localhost:8080). 
 
+## CLoading data, searching and creating a group of tasks
 
+## Understand the multimodal
 
+### Model for text encoder
+
+### Model for image encoder
+
+### Model for audio encoder
+
+### Model for video encoder
+
+### Unified vector space
+
+![img.png](img.png)
+
+It enables you to any search
+
+## Multimodal RAG
 
