@@ -3,11 +3,11 @@ Multi-Modal Search with Weaviate Vector Databases created during DeepLearningAI 
 
 ## Loading data, searching and creating a group of tasks
 
-The provided [code]() interacts with Weaviate, an AI-powered knowledge graph that allows storing and querying data based on semantic relationships. It showcases various functionalities, including connecting to Weaviate, importing data, performing searches, leveraging generative models like GPT-4, and conducting complex queries.
+The provided [code](https://github.com/glauberss2007/AI-multimodal-weaviate/blob/main/load-and-search-only.py) interacts with Weaviate, an AI-powered knowledge graph that allows storing and querying data based on semantic relationships. It showcases various functionalities, including connecting to Weaviate, importing data, performing searches, leveraging generative models like GPT-4, and conducting complex queries.
 
 ## Understand the multimodal
 
-The other [code]() demonstrates the integration of Weaviate, a semantic search engine, with various multimedia types (images, audio, video) and AI models like OpenAI's GPT-4 and DALL-E 3. The script connects to Weaviate, creates a collection, inserts multimedia data, performs searches, and interacts with GPT-4 for content generation and DALL-E 3 for image generation.
+The other [code](https://github.com/glauberss2007/AI-multimodal-weaviate/blob/main/multimedia-load-and-search.py) demonstrates the integration of Weaviate, a semantic search engine, with various multimedia types (images, audio, video) and AI models like OpenAI's GPT-4 and DALL-E 3. The script connects to Weaviate, creates a collection, inserts multimedia data, performs searches, and interacts with GPT-4 for content generation and DALL-E 3 for image generation.
 
 ### Model for text encoder
 
