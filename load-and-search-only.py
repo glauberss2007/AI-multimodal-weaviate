@@ -27,8 +27,8 @@ def load_data(path):
     return json.loads(response.text)
 
 # URLs for the sample data
-sample_10_url = "http://example.com/sample_10.json"
-sample_1k_url = "http://example.com/sample_1k.json"
+sample_10_url = "https://github.com/glauberss2007/AI-multimodal-weaviate/blob/main/data-samples/jeopardy_tiny.json"
+sample_1k_url = "https://github.com/glauberss2007/AI-multimodal-weaviate/blob/main/data-samples/jeopardy_1k.json"
 
 # Load the sample data
 data_10 = load_data(sample_10_url)
