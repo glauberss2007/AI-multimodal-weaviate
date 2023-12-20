@@ -53,7 +53,7 @@ Multimodal RAG (Retrieval Augmented Generative) refers to a framework or approac
 
 This approach in Weaviate enables sophisticated multimodal interactions within the vector search engine, allowing for a deeper understanding and utilization of diverse data types and their relationships.
 
-PS: in this repository you can found a docker compose file. You can navigate to this directory and run `docker-compose up -d` to run it and `docker ps` to confirm if is it running (http://localhost:8080).
+PS: in this repository you can found a [docker compose file](https://github.com/glauberss2007/AI-multimodal-weaviate/blob/main/docker-compose.yml). You can navigate to this directory and run `docker-compose up -d` to run it and `docker ps` to confirm if is it running (http://localhost:8080).
 
 # References
 - https://www.youtube.com/@Deeplearningai
