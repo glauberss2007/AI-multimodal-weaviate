@@ -58,4 +58,5 @@ PS: in this repository you can found a docker compose file. You can navigate to 
 # References
 - https://www.youtube.com/@Deeplearningai
 - https://weaviate.io/learn/workshops
+- https://weaviate.io/blog/multimodal-rag
  
